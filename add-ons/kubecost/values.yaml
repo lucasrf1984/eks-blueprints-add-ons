@@ -1,4 +1,6 @@
 cost-analyzer:
+  persistentVolume:
+    enabled: false
   global:
     grafana:
       enabled: false
@@ -16,6 +18,8 @@ cost-analyzer:
     emitNamespaceAnnotations: true
 
   prometheus:
+    persistentVolume:
+      enabled: false
     server:
       image:
         repository: public.ecr.aws/kubecost/prometheus
