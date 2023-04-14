@@ -18,6 +18,10 @@ cost-analyzer:
     emitNamespaceAnnotations: true
     persistentVolume:
       enabled: false
+  
+    prometheus-server:
+    persistentVolume:
+      enabled: false
 
   prometheus:
     persistentVolume:
