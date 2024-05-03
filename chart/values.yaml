@@ -134,9 +134,10 @@ karpenter:
   enable: false
   createNamespace: true
   serviceAccountName:
-  controllerClusterEndpoint:
-  awsDefaultInstanceProfile:
-  interruptionQueueName:
+  clusterName: eks-gitops
+  controllerClusterEndpoint: https://3DB0A735753BDB78B966BA5B79FDAEA0.gr7.us-west-2.eks.amazonaws.com
+  awsDefaultInstanceProfile: arn:aws:iam::504907951892:instance-profile/karpenter-blueprints_4067990795380418201
+  interruptionQueueName: eks-gitops-karpenter
 
 # Keda Values
 keda:
